@@ -3,8 +3,145 @@
 @import "fonts";
 @import "global";
 
+.header {
+    background-color: $primary-color;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0 22px;
+}
+
+.header__logo img{
+    display: block;
+}
+
+.header__box{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.menu-list{
+    display: flex;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.menu-list a {
+    padding: 11px 15px ;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.menu-list__item + .menu-list__item{
+    margin-left: 20px;
+}
+
+.menu-list__item.active{
+    background-color:$primary-darker;
+    border-bottom: 3px solid $primary-bottom;
+}
+
+.menu-list__item:hover{
+    background-color: $accent-color;
+    border-bottom: 3px solid $accent-darker;
+}
+
+.menu-list__item--portfolio a{
+    padding-left: 32px;
+    position: relative;
+    display: block;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 9px;
+        height: 6px;
+        top: 16px;
+        left: 15px;
+        background-image: url(../img/arrow-header-down.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.menu-list__item--portfolio:hover .portfolio-box{
+    display: block;
+}
+
+.portfolio-box{
+    display: none;
+    position: absolute;
+    padding-top: 15px;
+}
+
+.portfolio-items {
+    padding: 5px;
+    background-color: $accent-darker;
+    text-transform: none;
+    width: 202px;
+    border-radius: 4px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 20px;
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        border-top: 5px solid  $accent-darker;
+        border-left: 5px solid  $accent-darker;
+    }
+}
 
 
+.portfolio__item{
+    padding: 11px 15px 11px 26px;
+    background-color: $accent-color;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 13px;
+    position: relative;
+    a{
+        padding: 0;
+        &::before{
+            content: "";
+            display: none;
+        }
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: 11px;
+        width: 6px;
+        height: 9px;
+        background-image: url(../img/arrow-header-right.png);
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+
+.portfolio__item + .portfolio__item{
+    margin-top: 5px;
+}
+
+
+
+
+.header__search{
+    background-image: url(../img/header-search.png);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 22px;
+    margin-left: 20px;
+}
 
 
 @import "media";
