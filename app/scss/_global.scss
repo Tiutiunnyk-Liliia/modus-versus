@@ -1,0 +1,42 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  color: #7f8c8c;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+  line-height: 0;
+}
