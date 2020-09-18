@@ -126,14 +126,9 @@
 
 }
 
-
-
 .portfolio__item + .portfolio__item{
     margin-top: 5px;
 }
-
-
-
 
 .header__search{
     background-image: url(../img/header-search.png);
@@ -142,6 +137,110 @@
     height: 22px;
     margin-left: 20px;
 }
+
+
+.banner-slider{
+    position: relative;
+}
+
+.banner-slider__item{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.banner-slider__item1{
+    background-image: url(../img/banner-slider-1.png);
+}
+
+.banner-slider__item2{
+    background-image: url(../img/banner-slider-2.jpg);
+}
+
+.banner-slider__item3{
+    background-image: url(../img/banner-slider-3.jpeg);
+}
+
+.banner-slider__info{
+    width: 480px;
+    padding: 160px 0 210px ;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-slider__title{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 800;
+    background-color: $accent-color;
+    color: #fff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.banner-slider__text{
+    font-size: 16px;
+    line-height: 30px;
+    padding: 5px 0;
+    background-color: rgba(#000, 0.7);
+    color: #fff;
+    border-radius: 4px;
+}
+
+.banner-slider__arrows{
+    width: 50px;
+    height: 65px;
+    background-color: $accent-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner-slider__arrow-prev{
+    left: 0;
+    z-index: 5;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.banner-slider__arrow-next{
+    right: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+}
+
+.slick-dots li{
+    font-size: 0;
+    line-height: 0;
+    height: 50px;
+    padding: 22px 0;
+
+}
+
+
+.slick-dots li button{
+    width: 60px;
+    height: 6px;
+    background-color: $title-color;
+    margin: 0 8px;
+}
+
+.slick-dots li.slick-active button{
+    background-color: $accent-color;
+}
+
+
+
 
 
 @import "media";
