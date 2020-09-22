@@ -7,7 +7,6 @@ let gulp = require('gulp'),
     del = require('del'),
     autoprefixer = require('gulp-autoprefixer');
 
-
 gulp.task('clean', async function () {
     del.sync('dist')
 });
@@ -37,6 +36,7 @@ gulp.task('css', function () {
 gulp.task('html', function () {
     return gulp.src('app/*.html')
     .pipe(browserSync.reload({stream: true}))
+
 });
 
 gulp.task('script', function () {
@@ -63,6 +63,8 @@ gulp.task('browser-sync', function() {
     });
 });
 
+
+
 gulp.task('export', function () {
    let buildhtml = gulp.src('app/**/*.html')
        .pipe(gulp.dest('dist'));
@@ -82,7 +84,7 @@ gulp.task('watch', function () {
     gulp.watch('app/js/*.js', gulp.parallel('script'))
 });
 
-gulp.task('build', gulp.series('clean','export'));
+gulp.task('build', gulp.series('clean', 'export'));
 
-gulp.task('default', gulp.parallel('css','scss', 'js','browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('css','scss', 'js',  'browser-sync', 'watch'));
 
