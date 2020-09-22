@@ -750,6 +750,147 @@
     right: 60px;
 }
 
+.footer{
+    color: #fff;
+}
+
+.footer-top{
+    background-color: $primary-color;
+    padding: 50px 0;
+
+}
+
+.footer-top__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contact{
+    width: 100%;
+    max-width: 390px;
+    padding-right: 40px;
+}
+
+.footer-contact__logo {
+    margin-bottom: 34px;
+}
+
+.footer-contact__text{
+    line-height: 24px;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.footer-contact__phone span, .footer-contact__email span {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 600;
+    font-style: italic;
+    padding-left: 15px;
+}
+
+.footer-company{
+    width: 100%;
+    max-width: 195px;
+}
+
+.footer-company__title, .footer-community__title{
+    font-size: 20px;
+    line-height: 24px;
+    color: $primary-title;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.footer-company__list-item, .footer-community__list-item{
+    padding-left: 40px;
+    line-height: 24px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 22px;
+        width: 6px;
+        height: 9px;
+        background-image: url(../img/arrow-header-right.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.footer-community{
+    width: 100%;
+    max-width: 195px;
+}
+
+
+.footer-blog{
+    width: 100%;
+    max-width: 390px;
+}
+
+.footer-blog__title{
+    font-size: 20px;
+    line-height: 24px;
+    font-style: italic;
+}
+
+.footer-blog__title span{
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer-blog__post{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 22px;
+}
+
+.footer-blog__img{
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    background-color: $primary-darker;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.footer-blog__img svg{
+    height: 100%;
+}
+
+.footer-blog__date{
+    color: $primary-title;
+}
+
+.footer-bottom{
+    background-color: $primary-darker;
+    padding: 15px 0;
+}
+
+.footer-bottom__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom__social{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom__social-item{
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom__social-item svg{
+    max-width: 100%;
+    max-height: 100%;
+}
+
 
 
 
