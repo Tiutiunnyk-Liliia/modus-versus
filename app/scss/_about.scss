@@ -1,0 +1,22 @@
+.about-info__inner{
+    padding: 50px 0 70px;
+}
+
+.about-info{
+    .information-box__inner{
+        padding-top: 70px;
+    }
+}
+
+.about-info__title{
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    color: $accent-color;
+    font-weight: 400;
+}
+
+.about-info__subtitle{
+    font-size: 14px;
+    line-height: 21px;
+}
