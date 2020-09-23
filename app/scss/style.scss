@@ -25,6 +25,10 @@
     align-content: center;
 }
 
+.menu-btn{
+    display: none;
+}
+
 .menu-list{
     display: flex;
     text-transform: uppercase;
@@ -77,6 +81,7 @@
 .menu-list__item--portfolio:hover .portfolio-box{
     display: block;
 }
+
 
 .portfolio-box{
     display: none;

@@ -15,7 +15,7 @@ $(function () {
         slidesToScroll: 1,
         slidesToShow: 6,
         prevArrow: '<button class="happy-client-slider__arrows happy-client-slider__arrow-prev">\n' +
-            '        <?xml version="1.0" encoding="iso-8859-1"?>\n' +
+            '<?xml version="1.0" encoding="iso-8859-1"?>\n' +
             '<svg version="1.1" x="0px" y="0px"\n' +
             '\t viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;"  fill="#98a3a3" xml:space="preserve">\n' +
             '<path id="XMLID_18_" d="M315,0H15C6.716,0,0,6.716,0,15v300c0,8.284,6.716,15,15,15h300c8.284,0,15-6.716,15-15V15\n' +
@@ -37,6 +37,11 @@ $(function () {
             '</svg>' +
             '    </button>' ,
 
-         });
+        });
+
+    $('.menu-btn').on('click',function () {
+        $('.menu-list').toggleClass('menu-list--active');
     });
 
+
+});
