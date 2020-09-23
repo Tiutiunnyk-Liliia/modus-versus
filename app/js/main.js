@@ -8,6 +8,14 @@ $(function () {
             '        <img src="img/arrow-right-slider-double.png" alt="">\n' +
             '    </button>',
         dots: true,
+        responsive: [
+            {
+                breakpoint: 1001,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
     });
 
 

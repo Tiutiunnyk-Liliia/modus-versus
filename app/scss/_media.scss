@@ -2,6 +2,10 @@
     .menu-list__item + .menu-list__item{
         margin-left: 0;
     }
+
+    .banner-slider__info{
+        padding: 130px 0 180px ;
+    }
 }
 
 
@@ -71,6 +75,47 @@
         background-color: transparent;
         border-bottom: none;
     }
+
+    .banner-slider__info{
+        padding: 110px 0 150px ;
+    }
 }
+
+
+@media (max-width: 600px){
+
+    .banner-slider__info{
+        padding: 90px 0 120px ;
+    }
+
+
+    .banner-slider__title{
+        font-size: 40px;
+    }
+
+    .banner-slider__info{
+        width: 400px;
+    }
+}
+
+
+@media (max-width: 450px){
+    .banner-slider__info{
+        width: 300px;
+    }
+
+    .banner-slider__info{
+        padding: 70px 0 100px ;
+    }
+
+    .banner-slider__title{
+        font-size: 35px;
+    }
+
+    .banner-slider__text{
+        font-size: 14px;
+    }
+}
+
 
 
