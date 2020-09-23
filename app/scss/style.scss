@@ -223,7 +223,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f3f3f3;
+    background-color: $bg-light;
 }
 
 .slick-dots li{
@@ -246,10 +246,8 @@
     background-color: $accent-color;
 }
 
-
-
 .services{
-    background-color: #f3f3f3;
+    background-color: $bg-light;
 }
 
 .services-info{
@@ -257,7 +255,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 27px 30px;
-    background-color: #ececec;
+    background-color: $bg-dark;
     border-radius: 5px;
 
 }
@@ -370,7 +368,7 @@
 .information__title-box{
     padding-top: 100px;
     padding-bottom: 200px;
-    background-color: #ececec;
+    background-color: $bg-dark;
 }
 
 .information__title{
@@ -386,7 +384,7 @@
 }
 
 .information-box{
-    background-color: #f3f3f3;
+    background-color: $bg-light;
     padding-bottom: 65px;
 }
 
@@ -692,7 +690,7 @@
 }
 
 .happy-client{
-    background-color: #f3f3f3;
+    background-color: $bg-light;
 }
 
 .happy-client__title-box{
@@ -914,7 +912,7 @@
 //BREADCRUMBS   
 
 .breadcrumbs{
-    background-color: #ececec;
+    background-color:$bg-dark;
 }
 
 .breadcrumbs__inner{

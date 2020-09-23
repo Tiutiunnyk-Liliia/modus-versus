@@ -5,13 +5,14 @@ $violet-darker: #8B4A6B;
 $violet-bottom: #743E59;
 $violet-text: #532C40;
 
-
-
 $blue:  #26B9E1;
 $blue-darker: #1b8eb8;
 
 $gray: #777777;
 $gray-blue: #7f8c8c;
+
+$bg-gray: #ececec;
+$bg-light-gray: #f3f3f3;
 
 
 //Глобальные переменные для цвета
@@ -25,3 +26,6 @@ $accent-darker: $blue-darker;
 
 $text-color: $gray;
 $title-color: $gray-blue;
+
+$bg-dark: $bg-gray;
+$bg-light: $bg-light-gray;
