@@ -911,6 +911,51 @@
     max-height: 100%;
 }
 
+//BREADCRUMBS   
+
+.breadcrumbs{
+    background-color: #ececec;
+}
+
+.breadcrumbs__inner{
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.breadcrumbs__title{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $title-color;
+}
+
+.breadcrumbs__list{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.breadcrumbs__list-item{
+    color: $title-color;
+    padding: 0 12px 0 10px;
+    position: relative;
+    &::after{
+        content: "/";
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &:last-child{
+        padding: 0 0 0 10px;
+        &::after{
+            display: none;
+        }
+    }
+}
+
+
 
 
 
