@@ -100,20 +100,23 @@
 
     .menu-list{
         background-color: $primary-color;
-        display: none;
+        display: flex;
+        flex-direction: column;
         width: 100%;
         max-width: 900px;
         position: absolute;
         top: 72px;
         left: 0;
         z-index: 2;
+        height: auto;
         padding-bottom: 40px;
+        overflow: hidden;
+        transform: translateY(-130%);
+        transition: all 0.5s;
     }
 
     .menu-list.menu-list--active{
-        display: flex;
-        flex-direction: column;
-
+        transform: translateY(0);
     }
 
     .menu-btn{
@@ -351,6 +354,7 @@
             width: 15px;
             height: 15px;
             transform: rotate(180deg);
+            transition: all 0.5s;
         }
     }
 
@@ -364,6 +368,7 @@
     .footer-community__list, .footer-company__list{
         height: 0;
         overflow: hidden;
+        transition: all 1s;
     }
 
     .footer-community--active .footer-community__list{
