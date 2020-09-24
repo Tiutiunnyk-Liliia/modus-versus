@@ -373,9 +373,9 @@
 }
 
 .information__title-box{
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-top: 70px;
     background-color: $bg-dark;
+    margin-bottom: -150px;
 }
 
 .information__title{
@@ -388,15 +388,16 @@
 
 .information__subtitle{
     text-align: center;
+    padding-bottom: 70px;
 }
 
 .information-box{
     background-color: $bg-light;
     padding-bottom: 65px;
+    padding-top: 200px;
 }
 
 .information-box__inner{
-    padding-top: 215px;
     display: flex;
     justify-content: space-between;
 }
@@ -405,7 +406,7 @@
 
 }
 
-.information-box__item-choice{
+.information-box__item.choice{
     width: 100%;
     max-width: 280px;
 }
@@ -436,9 +437,9 @@
 }
 
 
-.information-box__item-number{
+.information-box__item.number{
     width: 590px;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .number__text{
@@ -580,7 +581,7 @@
 
 
 
-.information-box__item-clients{
+.information-box__item.clients{
     width: 100%;
     max-width: 280px;
 }
@@ -612,10 +613,6 @@
 
 
 .information-images{
-    position: absolute;
-    top: 200px;
-    left: 0;
-    width: 100%;
 }
 
 .information-images__inner{
@@ -627,49 +624,29 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url(../img/Browser.jpg);
-    background-size: cover;
     border-radius: 6px;
     height: 360px;
     width: 570px;
     z-index: 2;
-    .box-img{
-        padding: 47px 6px 6px;
-        border-radius: 6px;
-        overflow: hidden;
+    img{
+        display: block;
         width: 100%;
         height: 100%;
-        img{
-            display: block;
-            width: 100%;
-            height: 100%;
-            border-radius: 6px;
-        }
     }
 }
 
-.box-left{
+.box-left {
     position: absolute;
     bottom: 40px;
     left: 0;
     width: 370px;
     height: 260px;
     border-radius: 6px;
-    background-image: url(../img/Browser-right.jpg);
-    background-size: cover;
     margin-bottom: 5px;
-    padding: 42px 3px 4px;
-    .box-img{
-
-        border-radius: 6px;
+    img{
+        display: block;
         width: 100%;
         height: 100%;
-        img{
-            display: block;
-            width: 100%;
-            height: 100%;
-            border-radius: 6px;
-        }
     }
 }
 
@@ -680,19 +657,10 @@
     width: 370px;
     height: 260px;
     border-radius: 6px;
-    background-image: url(../img/Browser-right.jpg);
-    background-size: cover;
-    .box-img{
+    img{
+        display: block;
         width: 100%;
         height: 100%;
-        padding: 42px 3px 4px;
-        border-radius: 6px;
-        img{
-            display: block;
-            width: 100%;
-            height: 100%;
-            border-radius: 6px;
-        }
     }
 }
 
