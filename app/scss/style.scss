@@ -224,14 +224,15 @@
     border-bottom-left-radius: 4px;
 }
 
-.slick-dots{
+.banner-slider .slick-dots{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $bg-light;
+    outline: none;
 }
 
-.slick-dots li{
+.banner-slider .slick-dots li{
     font-size: 0;
     line-height: 0;
     height: 50px;
@@ -240,14 +241,14 @@
 }
 
 
-.slick-dots li button{
+.banner-slider .slick-dots li button{
     width: 60px;
     height: 6px;
     background-color: $title-color;
     margin: 0 8px;
 }
 
-.slick-dots li.slick-active button{
+.banner-slider .slick-dots li.slick-active button{
     background-color: $accent-color;
 }
 
@@ -668,7 +669,7 @@
     background-color: $bg-light;
 }
 
-.happy-client__title-box{
+.happy-client__title{
     margin-right: 115px;
     display: flex;
     justify-content: flex-start;
@@ -742,6 +743,35 @@
 .happy-client-slider__arrow-prev{
     right: 60px;
 }
+
+.happy-client__slider .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-light;
+}
+
+.happy-client__slider .slick-dots li{
+    font-size: 0;
+    line-height: 0;
+    height: 50px;
+    padding: 22px 0;
+    outline: none;
+
+}
+
+.happy-client__slider .slick-dots li button{
+    width: 20px;
+    height: 6px;
+    background-color: $title-color;
+    margin: 0 5px;
+    outline: none;
+}
+
+.happy-client__slider .slick-dots li.slick-active button{
+    background-color: $accent-color;
+}
+
 
 .footer{
     color: #fff;

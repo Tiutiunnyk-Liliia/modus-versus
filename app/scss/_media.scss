@@ -53,6 +53,19 @@
 }
 
 
+@media (max-width: 950px){
+    .happy-client__title{
+        margin-right: 0;
+        span{
+            &::before{
+                display: none;
+            }
+        }
+    }
+}
+
+
+
 
 
 @media (max-width: 900px){
@@ -314,6 +327,12 @@
         width: 160px;
         height: 120px;
         bottom: 20px;
+    }
+
+    .happy-client__title{
+        span{
+            width: 50%;
+        }
     }
 }
 

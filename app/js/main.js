@@ -44,6 +44,49 @@ $(function () {
             '\t/>\n' +
             '</svg>' +
             '    </button>' ,
+        responsive: [
+            {
+                breakpoint: 1151,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 951,
+                settings: {
+                    slidesToShow: 4,
+                    dots: true,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 751,
+                settings: {
+                    slidesToShow: 3,
+                    dots: true,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 571,
+                settings: {
+                    slidesToShow: 2,
+                    dots: true,
+                    arrows: false,
+                }
+            },
+
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 1,
+                    dots: true,
+                    centerMode: true,
+                    arrows: false,
+                }
+            },
+
+        ]
 
         });
 
