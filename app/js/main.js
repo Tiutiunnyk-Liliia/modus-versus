@@ -94,5 +94,12 @@ $(function () {
         $('.menu-list').toggleClass('menu-list--active');
     });
 
+    $('.footer-community__title').on('click',function () {
+        $('.footer-community').toggleClass('footer-community--active');
+    });
+
+    $('.footer-company__title').on('click',function () {
+        $('.footer-company').toggleClass('footer-company--active');
+    });
 
 });
