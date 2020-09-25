@@ -302,20 +302,23 @@
 }
 
 .services__items{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 50px;
     padding-bottom: 75px;
 }
 
-.services__item{
+.flex__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex__item{
     position: relative;
     text-align: center;
     padding: 45px 27px 60px;
     width: 100%;
     max-width: 270px;
-    min-height: 315px;
+    height: 315px;
     background-color: #fff;
     border-radius: 6px;
     border-bottom: 4px solid #e5e6e6;

@@ -1,12 +1,12 @@
 @media (max-width: 1150px) {
-    .services__items {
+    .flex__items {
         flex-wrap: wrap;
         max-width: 800px;
         margin: 0 auto;
         justify-content: space-around;
     }
 
-    .services__item {
+    .flex__item {
         margin-top: 70px;
     }
 
@@ -36,6 +36,19 @@
         height: 230px;
         bottom: 30px;
     }
+
+    .team__box{
+        padding-bottom: 100px;
+    }
+
+    .team__title{
+        margin-bottom: 0;
+    }
+
+    .team__info{
+        padding-top: 50px;
+    }
+
 
 }
 
@@ -209,13 +222,18 @@
         font-size: 26px;
     }
 
-    .information__title{
+    .information__title, .team-info__title{
         font-size: 32px;
     }
 
     .information__subtitle{
         max-width: 500px;
         margin: 0 auto;
+    }
+
+
+    .team__info-inner{
+        padding: 0;
     }
 }
 
@@ -253,7 +271,7 @@
         width: 400px;
     }
 
-    .services__items{
+    .flex__items{
         max-width: 500px;
     }
 
@@ -315,6 +333,7 @@
         height: 140px;
         bottom: 20px;
     }
+
 }
 
 
