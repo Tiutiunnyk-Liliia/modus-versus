@@ -1,5 +1,5 @@
 body{
-    background-color: $bg-light-gray;
+    background-color: $bg-light;
 }
 
 .map__inner{
@@ -7,5 +7,130 @@ body{
     iframe{
         width: 100%;
         min-height: 400px;
+    }
+}
+
+.contact-box__text{
+    padding: 30px 25px;
+    background-color: $bg-dark;
+    border-radius: 6px;
+}
+
+.contact-box__inner{
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.contact-box__form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 130px;
+    width: 100%;
+    max-width: 770px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    label{
+        width: 100%;
+        font-size: 18px;
+        line-height: 40px;
+    }
+    input{
+        background-color: #e5e6e6;
+        box-shadow: inset 3.277px 2.294px 0 0 rgba(0, 0, 0, 0.05);
+        border: none;
+        border-radius: 6px;
+    }
+
+}
+
+
+.contact-form__name, .contact-form__email, .contact-form__site {
+    width: 100%;
+    max-width: 470px;
+    min-height: 40px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+
+}
+
+.contact-form__area{
+    width: 100%;
+    min-height: 240px;
+    margin-bottom: 35px;
+}
+
+.contact-form__btn{
+    width: 200px;
+    padding: 16px 0;
+    text-align: center;
+    background-color: $accent-color;
+    border-bottom: 4px solid $accent-darker;
+    border-radius: 6px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.contact-box__form-title, .contact-box__address-title{
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $title-color;
+    margin-bottom: 63px;
+}
+
+.contact-box__address{
+    width: 210px;
+}
+
+.contact-address__location{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+    &-img{
+        width: 30px;
+        height: 35px;
+        margin-right: 10px;
+    }
+}
+
+.contact-address__phone{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    &-img{
+        width: 20px;
+        height: auto;
+        margin-right: 15px;
+    }
+}
+
+.contact-address__email{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    line-height: 18px;
+    color: $accent-color;
+    &-img{
+        width: 20px;
+        height: auto;
+        margin-right: 15px;
+    }
+    &-link{
+        border-bottom: 1px solid $accent-color;
     }
 }
