@@ -224,12 +224,11 @@
     border-bottom-left-radius: 4px;
 }
 
-.banner-slider .slick-dots{
+.banner-slider .slick-dots {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $bg-light;
-    outline: none;
 }
 
 .banner-slider .slick-dots li{
@@ -246,6 +245,7 @@
     height: 6px;
     background-color: $title-color;
     margin: 0 8px;
+    outline: none;
 }
 
 .banner-slider .slick-dots li.slick-active button{
