@@ -65,6 +65,17 @@
 
 }
 
+@media (max-width: 1000px){
+    .contact-box__inner{
+        display: block;
+    }
+
+    .contact-box__address{
+        margin-top: 100px;
+        max-width: 100%;
+    }
+}
+
 
 @media (max-width: 950px){
     .happy-client__title{
@@ -257,6 +268,26 @@
         height: 171px;
         bottom: 30px;
     }
+
+    .map__inner{
+        iframe{
+            min-height: 300px;
+        }
+    }
+
+    .contact-box__inner{
+        margin-bottom: 80px;
+    }
+
+    .contact-form__name, .contact-form__email, .contact-form__site{
+        flex-direction: column;
+    }
+
+    .contact-form__name-input, .contact-form__email-input, .contact-form__site-input{
+        order: 2;
+    }
+
+
 }
 
 
