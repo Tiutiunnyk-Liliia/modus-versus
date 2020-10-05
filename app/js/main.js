@@ -104,13 +104,33 @@ $(function () {
 
 
 
-    $('.post-attached__slider').slick({
-        prevArrow: '<button class="post-attached__slider__arrows post-attached__slider__arrow-prev">\n' +
+    $('.post-slider').slick({
+        prevArrow: '<button class="post-slider__arrows post-slider__arrow-prev">\n' +
             '        <img src="img/arrow-left-slider-double.png" alt="">\n' +
             '    </button>\n' ,
-        nextArrow: '<button class="post-attached__slider__arrows post-attached__slider__arrow-next">\n' +
+        nextArrow: '<button class="post-slider__arrows post-slider__arrow-next">\n' +
             '        <img src="img/arrow-right-slider-double.png" alt="">\n' +
             '    </button>',
+        // responsive: [
+        //     {
+        //         breakpoint: 1001,
+        //         settings: {
+        //             arrows: false,
+        //         }
+        //     }
+        // ]
+    });
+
+
+    $('.poster-slider').slick({
+        prevArrow: '<button class="poster-slider__arrows poster-slider__arrow-prev">\n' +
+            '        <img src="img/arrow-left-slider-double.png" alt="">\n' +
+            '    </button>\n' ,
+        nextArrow: '<button class="poster-slider__arrows poster-slider__arrow-next">\n' +
+            '        <img src="img/arrow-right-slider-double.png" alt="">\n' +
+            '    </button>',
+        dots: true,
+        slidesToShow: 1,
         // responsive: [
         //     {
         //         breakpoint: 1001,

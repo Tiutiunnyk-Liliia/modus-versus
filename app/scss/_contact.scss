@@ -23,7 +23,8 @@ body{
     margin-bottom: 150px;
 }
 
-.contact-box__form{
+.contact-box__form,
+.comment-box__form{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -32,7 +33,8 @@ body{
     max-width: 770px;
 }
 
-.contact-form{
+.contact-form,
+.comment-form{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -40,7 +42,8 @@ body{
 }
 
 
-.contact-form__name, .contact-form__email, .contact-form__site{
+.contact-form__name, .contact-form__email, .contact-form__site,
+.comment-form__name, .comment-form__email, .comment-form__site{
     margin-bottom: 20px;
     display: flex;
     width: 100%;
@@ -49,7 +52,8 @@ body{
 }
 
 
-.contact-form__name-input, .contact-form__email-input, .contact-form__site-input {
+.contact-form__name-input, .contact-form__email-input, .contact-form__site-input,
+.comment-form__name-input, .comment-form__email-input, .comment-form__site-input{
     width: 100%;
     max-width: 470px;
     min-height: 40px;
@@ -60,7 +64,8 @@ body{
     border-radius: 6px;
 }
 
-.contact-form__area{
+.contact-form__area,
+.comment-form__area{
     width: 100%;
     min-height: 240px;
     margin-bottom: 35px;
@@ -70,7 +75,8 @@ body{
     border-radius: 6px;
 }
 
-.contact-form__btn{
+.contact-form__btn,
+.comment-form__btn{
     width: 200px;
     padding: 16px 0;
     text-align: center;
@@ -83,7 +89,8 @@ body{
     line-height: 20px;
 }
 
-.contact-box__form-title, .contact-box__address-title{
+.contact-box__form-title, .contact-box__address-title,
+.comment-box__form-title{
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
