@@ -141,100 +141,110 @@ $(function () {
         // ]
     });
 
-    /////// VIDEO
 
-    document.querySelector('#play').onclick = play;
-    document.querySelector('#pause').onclick = pause;
+    $('.tab').on('click', function (e) {
+        e.preventDefault();
+        $($(this).siblings()).removeClass('tab--active');
+        $($(this).closest('.tabs-wrapper').siblings().find('div')).removeClass('tabs-content--active');
+        $(this).addClass('tab--active');
+        $($(this).attr('href')).addClass('tabs-content--active');
 
-    let video;
-    let display;
-    let videoProgress;
-
-    video = document.querySelector('#video-player');
-    videoProgress = document.querySelector('#video-progress');
-    video.ontimeupdate = videoProgressUpdate;
-    videoProgress.onclick = videoRewind;
-    video.oncanplay = videoLasting;
-
-
-    function play() {
-        video.play();
-    }
-
-    function pause() {
-        video.pause();
-    }
-
-    function videoLasting() {
-        document.querySelector('#video-time__all').innerHTML = video.duration;
-        document.querySelector('#video-time__now').innerHTML = 0;
-    }
-    
-    function videoProgressUpdate() {
-        let videoDuration = video.duration;
-        let videoCurrent = video.currentTime;
-        videoProgress.value = (videoCurrent/videoDuration)*100;
-        document.querySelector('#video-time__now').innerHTML = video.currentTime;
-    }
-
-    function videoRewind() {
-        let progressWidth = this.offsetWidth;
-        let progressPosition = event.offsetX;
-        this.value = (progressPosition/progressWidth)*100;
-        video.pause();
-        video.currentTime = video.duration*(progressPosition/progressWidth);
-        video.play();
-    }
-
-
-
-    ///////AUDIO
-
-
-    document.querySelector('#audio-play').onclick = audioPlay;
-    document.querySelector('#audio-pause').onclick = audioPause;
-
-    let audio;
-    let audioDisplay;
-    let audioProgress;
-
-    audio = document.querySelector('#audio-player');
-    audioProgress = document.querySelector('#audio-progress');
-    audio.ontimeupdate = audioProgressUpdate;
-    audioProgress.onclick = audioRewind;
-    audio.oncanplay = audioLasting;
-
-
-    function audioPlay() {
-        audio.play();
-    }
-
-    function audioPause() {
-        audio.pause();
-    }
-
-    function audioLasting() {
-        document.querySelector('#audio-time__all').innerHTML = audio.duration;
-        document.querySelector('#audio-time__now').innerHTML = 0;
-    }
-
-    function audioProgressUpdate() {
-        let audioDuration = audio.duration;
-        let audioCurrent = audio.currentTime;
-        audioProgress.value = (audioCurrent/audioDuration)*100;
-        document.querySelector('#audio-time__now').innerHTML = audio.currentTime;
-    }
-
-    function audioRewind() {
-        let progressWidth = this.offsetWidth;
-        let progressPosition = event.offsetX;
-        this.value = (progressPosition/progressWidth)*100;
-        audio.pause();
-        audio.currentTime = audio.duration*(progressPosition/progressWidth);
-        audio.play();
-    }
-
-
+    });
 
 
 });
+
+/////// VIDEO
+
+document.querySelector('#play').onclick = play;
+document.querySelector('#pause').onclick = pause;
+
+let video;
+let display;
+let videoProgress;
+
+video = document.querySelector('#video-player');
+videoProgress = document.querySelector('#video-progress');
+video.ontimeupdate = videoProgressUpdate;
+videoProgress.onclick = videoRewind;
+video.oncanplay = videoLasting;
+
+
+function play() {
+    video.play();
+}
+
+function pause() {
+    video.pause();
+}
+
+function videoLasting() {
+    document.querySelector('#video-time__all').innerHTML = video.duration;
+    document.querySelector('#video-time__now').innerHTML = 0;
+}
+
+function videoProgressUpdate() {
+    let videoDuration = video.duration;
+    let videoCurrent = video.currentTime;
+    videoProgress.value = (videoCurrent/videoDuration)*100;
+    document.querySelector('#video-time__now').innerHTML = video.currentTime;
+}
+
+function videoRewind() {
+    let progressWidth = this.offsetWidth;
+    let progressPosition = event.offsetX;
+    this.value = (progressPosition/progressWidth)*100;
+    video.pause();
+    video.currentTime = video.duration*(progressPosition/progressWidth);
+    video.play();
+}
+
+
+
+///////AUDIO
+
+
+document.querySelector('#audio-play').onclick = audioPlay;
+document.querySelector('#audio-pause').onclick = audioPause;
+
+let audio;
+let audioDisplay;
+let audioProgress;
+
+audio = document.querySelector('#audio-player');
+audioProgress = document.querySelector('#audio-progress');
+audio.ontimeupdate = audioProgressUpdate;
+audioProgress.onclick = audioRewind;
+audio.oncanplay = audioLasting;
+
+
+function audioPlay() {
+    audio.play();
+}
+
+function audioPause() {
+    audio.pause();
+}
+
+function audioLasting() {
+    document.querySelector('#audio-time__all').innerHTML = audio.duration;
+    document.querySelector('#audio-time__now').innerHTML = 0;
+}
+
+function audioProgressUpdate() {
+    let audioDuration = audio.duration;
+    let audioCurrent = audio.currentTime;
+    audioProgress.value = (audioCurrent/audioDuration)*100;
+    document.querySelector('#audio-time__now').innerHTML = audio.currentTime;
+}
+
+function audioRewind() {
+    let progressWidth = this.offsetWidth;
+    let progressPosition = event.offsetX;
+    this.value = (progressPosition/progressWidth)*100;
+    audio.pause();
+    audio.currentTime = audio.duration*(progressPosition/progressWidth);
+    audio.play();
+}
+
+
