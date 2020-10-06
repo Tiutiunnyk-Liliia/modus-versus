@@ -258,6 +258,11 @@ $(function () {
 
     });
 
+    $('.accordion__item').on('click', function () {
+        $($(this).siblings()).removeClass('accordion__item--active');
+        $(this).addClass('accordion__item--active');
+    })
+
 
 });
 
