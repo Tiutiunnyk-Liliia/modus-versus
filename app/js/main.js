@@ -215,6 +215,39 @@ $(function () {
 
     });
 
+    $('.features-bigslider').slick({
+        prevArrow: '<button class="features-bigslider__arrows features-bigslider__arrow-prev">\n' +
+            '        <img src="img/arrow-left-slider-double.png" alt="">\n' +
+            '    </button>\n' ,
+        nextArrow: '<button class="features-bigslider__arrows features-bigslider__arrow-next">\n' +
+            '        <img src="img/arrow-right-slider-double.png" alt="">\n' +
+            '    </button>',
+        dots: true,
+        slidesToShow: 1,
+    });
+
+    $('.features-middleslider').slick({
+        prevArrow: '<button class="features-middleslider__arrows features-middleslider__arrow-prev">\n' +
+            '        <img src="img/arrow-left-slider-double.png" alt="">\n' +
+            '    </button>\n' ,
+        nextArrow: '<button class="features-middleslider__arrows features-middleslider__arrow-next">\n' +
+            '        <img src="img/arrow-right-slider-double.png" alt="">\n' +
+            '    </button>',
+        dots: true,
+        slidesToShow: 1,
+    });
+
+    $('.features-smallslider').slick({
+        prevArrow: '<button class="features-smallslider__arrows features-smallslider__arrow-prev">\n' +
+            '        <img src="img/arrow-left-slider-double.png" alt="">\n' +
+            '    </button>\n' ,
+        nextArrow: '<button class="features-smallslider__arrows features-smallslider__arrow-next">\n' +
+            '        <img src="img/arrow-right-slider-double.png" alt="">\n' +
+            '    </button>',
+        dots: true,
+        slidesToShow: 1,
+    });
+
 
     $('.tab').on('click', function (e) {
         e.preventDefault();

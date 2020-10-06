@@ -157,7 +157,10 @@
 .banner-slider,
 .post-slider,
 .poster-slider,
-.portfolio-slider{
+.portfolio-slider,
+.features-bigslider,
+.features-middleslider,
+.features-smallslider{
     position: relative;
 }
 
@@ -210,7 +213,10 @@
 .banner-slider__arrows,
 .post-slider__arrows,
 .poster-slider__arrows,
-.portfolio-slider__arrows{
+.portfolio-slider__arrows,
+.features-bigslider__arrows,
+.features-middleslider__arrows,
+.features-smallslider__arrows{
     width: 50px;
     height: 65px;
     background-color: $accent-color;
@@ -225,7 +231,10 @@
 .banner-slider__arrow-prev,
 .post-slider__arrow-prev,
 .poster-slider__arrow-prev,
-.portfolio-slider__arrow-prev{
+.portfolio-slider__arrow-prev,
+.features-bigslider__arrow-prev,
+.features-middleslider__arrow-prev,
+.features-smallslider__arrow-prev{
     left: 0;
     z-index: 5;
     border-top-right-radius: 4px;
@@ -235,7 +244,10 @@
 .banner-slider__arrow-next,
 .post-slider__arrow-next,
 .poster-slider__arrow-next,
-.portfolio-slider__arrow-next{
+.portfolio-slider__arrow-next,
+.features-bigslider__arrow-next,
+.features-middleslider__arrow-next,
+.features-smallslider__arrow-next{
     right: 0;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -243,7 +255,10 @@
 
 .banner-slider .slick-dots,
 .poster-slider .slick-dots,
-.portfolio-slider .slick-dots{
+.portfolio-slider .slick-dots,
+.features-bigslider .slick-dots,
+.features-middleslider .slick-dots,
+.features-smallslider .slick-dots{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,7 +267,10 @@
 
 .banner-slider .slick-dots li,
 .poster-slider .slick-dots li,
-.portfolio-slider .slick-dots li{
+.portfolio-slider .slick-dots li,
+.features-bigslider .slick-dots li,
+.features-middleslider .slick-dots li,
+.features-smallslider .slick-dots li{
     font-size: 0;
     line-height: 0;
     height: 50px;
@@ -263,7 +281,10 @@
 
 .banner-slider .slick-dots li button,
 .poster-slider .slick-dots li button,
-.portfolio-slider .slick-dots li button{
+.portfolio-slider .slick-dots li button,
+.features-bigslider .slick-dots li button,
+.features-middleslider .slick-dots li button,
+.features-smallslider .slick-dots li button{
     width: 60px;
     height: 6px;
     background-color: $title-color;
@@ -273,8 +294,25 @@
 
 .banner-slider .slick-dots li.slick-active button,
 .poster-slider .slick-dots li.slick-active button,
-.portfolio-slider .slick-dots li.slick-active button{
+.portfolio-slider .slick-dots li.slick-active button,
+.features-bigslider .slick-dots li.slick-active button,
+.features-middleslider .slick-dots li.slick-active button,
+.features-smallslider .slick-dots li.slick-active button{
     background-color: $accent-color;
+}
+
+.portfolio-related-slider__inner{
+    width: 270px;
+    height: 270px;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .services{
