@@ -155,7 +155,8 @@
 
 .banner-slider,
 .post-slider,
-.poster-slider{
+.poster-slider,
+.portfolio-slider{
     position: relative;
 }
 
@@ -207,7 +208,8 @@
 
 .banner-slider__arrows,
 .post-slider__arrows,
-.poster-slider__arrows{
+.poster-slider__arrows,
+.portfolio-slider__arrows{
     width: 50px;
     height: 65px;
     background-color: $accent-color;
@@ -221,7 +223,8 @@
 
 .banner-slider__arrow-prev,
 .post-slider__arrow-prev,
-.poster-slider__arrow-prev{
+.poster-slider__arrow-prev,
+.portfolio-slider__arrow-prev{
     left: 0;
     z-index: 5;
     border-top-right-radius: 4px;
@@ -230,14 +233,16 @@
 
 .banner-slider__arrow-next,
 .post-slider__arrow-next,
-.poster-slider__arrow-next{
+.poster-slider__arrow-next,
+.portfolio-slider__arrow-next{
     right: 0;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
 
 .banner-slider .slick-dots,
-.poster-slider .slick-dots{
+.poster-slider .slick-dots,
+.portfolio-slider .slick-dots{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,7 +250,8 @@
 }
 
 .banner-slider .slick-dots li,
-.poster-slider .slick-dots li{
+.poster-slider .slick-dots li,
+.portfolio-slider .slick-dots li{
     font-size: 0;
     line-height: 0;
     height: 50px;
@@ -255,7 +261,8 @@
 
 
 .banner-slider .slick-dots li button,
-.poster-slider .slick-dots li button{
+.poster-slider .slick-dots li button,
+.portfolio-slider .slick-dots li button{
     width: 60px;
     height: 6px;
     background-color: $title-color;
@@ -264,7 +271,8 @@
 }
 
 .banner-slider .slick-dots li.slick-active button,
-.poster-slider .slick-dots li.slick-active button{
+.poster-slider .slick-dots li.slick-active button,
+.portfolio-slider .slick-dots li.slick-active button{
     background-color: $accent-color;
 }
 
@@ -688,7 +696,8 @@
     background-color: $bg-light;
 }
 
-.happy-client__title{
+.happy-client__title,
+.portfolio-related__title{
     margin-right: 115px;
     display: flex;
     justify-content: flex-start;
@@ -722,7 +731,8 @@
 
 }
 
-.happy-client__slider{
+.happy-client__slider,
+.portfolio-related-slider {
     position: relative;
     padding: 50px 0;
 }
@@ -743,7 +753,8 @@
     fill: $title-color;
 }
 
-.happy-client-slider__arrows {
+.happy-client-slider__arrows,
+.portfolio-related-slider__arrows{
     position: absolute;
     top: -30px;
     width: 40px;
@@ -751,26 +762,31 @@
 
 }
 
-.happy-client-slider__arrows:hover  svg{
+.happy-client-slider__arrows:hover  svg,
+.portfolio-related-slider__arrows:hover  svg{
     fill: #26B9E1;
 }
 
-.happy-client-slider__arrow-next{
+.happy-client-slider__arrow-next,
+.portfolio-related-slider__arrow-next{
     right: 0;
 }
 
-.happy-client-slider__arrow-prev{
+.happy-client-slider__arrow-prev,
+.portfolio-related-slider__arrow-prev {
     right: 60px;
 }
 
-.happy-client__slider .slick-dots{
+.happy-client__slider .slick-dots,
+.portfolio-related-slider .slick-dots{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $bg-light;
 }
 
-.happy-client__slider .slick-dots li{
+.happy-client__slider .slick-dots li,
+.portfolio-related-slider .slick-dots li{
     font-size: 0;
     line-height: 0;
     height: 50px;
@@ -779,7 +795,8 @@
 
 }
 
-.happy-client__slider .slick-dots li button{
+.happy-client__slider .slick-dots li button,
+.portfolio-related-slider .slick-dots li button{
     width: 20px;
     height: 6px;
     background-color: $title-color;
@@ -787,7 +804,8 @@
     outline: none;
 }
 
-.happy-client__slider .slick-dots li.slick-active button{
+.happy-client__slider .slick-dots li.slick-active button,
+.portfolio-related-slider .slick-dots li.slick-active button{
     background-color: $accent-color;
 }
 

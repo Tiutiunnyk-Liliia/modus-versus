@@ -124,3 +124,190 @@
     display: block;
 }
 
+.portfolio-single__title{
+    padding: 60px 0;
+    font-size: 25px;
+    line-height: 30px;
+    color: $title-color;
+}
+
+.portfolio-slider__item{
+    height: 700px;
+}
+
+.portfolio-single__info{
+    padding: 60px 0 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-single__description-title{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.portfolio-single__description-text{
+    p{
+        margin-bottom: 35px;
+    }
+}
+
+.portfolio-single__details{
+    width: 100%;
+    max-width: 280px;
+}
+
+.portfolio-single__details-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0;
+    border-bottom: 1px solid #e1e2e2;
+}
+
+.portfolio-single__details-left{
+    padding-left: 35px;
+    position: relative;
+}
+
+.portfolio-single__details-right{
+    max-width: 100px;
+    text-align: right;
+}
+
+.portfolio-single__details-url .portfolio-single__details-right{
+    text-transform: uppercase;
+    color: $accent-color;
+}
+
+.portfolio-single__details-date .portfolio-single__details-left::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/details-calendar.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.portfolio-single__details-technologies .portfolio-single__details-left::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/details-mechanical.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.portfolio-single__details-client .portfolio-single__details-left::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/details-user.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.portfolio-single__details-url .portfolio-single__details-left::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/details-link.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.portfolio-related-slider{
+    margin-bottom: 40px;
+}
+
+
+.portfolio-related-slider__inner{
+    width: 270px;
+    height: 270px;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.portfolio-related__title{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.related-slider__shadow{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $primary-color;
+    transition: all 0.3s;
+}
+
+.portfolio-related-slider__item:hover .related-slider__shadow {
+    opacity: 1;
+}
+
+.related-slider__shadow-eye{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: $primary-darker;
+    background-image: url(../img/view.png);
+    background-size: 26px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.related-slider__shadow-link{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: $primary-darker;
+    background-image: url(../img/link.png);
+    background-size: 26px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.related-slider__shadow-text{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
