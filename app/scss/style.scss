@@ -387,7 +387,8 @@
     border-bottom: 4px solid #e5e6e6;
 }
 
-.services__item-title{
+.services__item-title,
+.features-services__item-title{
     margin-bottom: 35px;
     color: $title-color;
     font-size: 16px;
@@ -396,26 +397,31 @@
     text-transform: uppercase;
 }
 
-.services__item-text{
+.services__item-text,
+.features-services__item-text{
     font-size: 12px;
     line-height: 20px;
 }
 
 
-.services__item-img{
+.services__item-img,
+.features-services__item-img{
     width: 60px;
     margin: 0 auto 15px;
 }
 
-.services__item-img svg{
+.services__item-img svg,
+.features-services__item-img svg{
     fill: $primary-darker;
 }
 
-.services__item:hover .services__item-img svg{
+.services__item:hover .services__item-img svg,
+.features-services__item:hover .features-services__item-img svg{
     fill: $accent-darker;
 }
 
-.services__item-btn{
+.services__item-btn,
+.features-services__item-btn{
     position: absolute;
     bottom: -23px;
     left: 50%;
@@ -430,7 +436,8 @@
     border-bottom: 4px solid $primary-bottom;
 }
 
-.services__item:hover .services__item-btn{
+.services__item:hover .services__item-btn,
+.features-services__item:hover .features-services__item-btn{
     background-color: $accent-color;
     border-bottom: 4px solid $accent-darker;
 }
